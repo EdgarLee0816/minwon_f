@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+/* 공통 사항 처리 */
+img { max-width:100% ;}
+
+a { 
+    text-decoration: none;
+    color:black;
+}
+
+i { font-style: normal;}
+
+h1 { display:none; }
+
+#layout { 
+    max-width:1120px;
+    margin:auto;
+    border:0px solid red;
+    display: flex;
+}
+
+/* 좌측 섹션 처리 */
+
+#left { 
+    margin-top:20px;    
+}
+
+#infom {
+    background:#0191d7 url('../images/bg1.png')no-repeat 100% 100%;
+    max-width: 500px;
+    border:0px solid blue;
+    height: 270px;
+    color:white;
+    padding:30px 30px;
+    border-radius:10px;
+    
+}
+
+#infom h3 {
+    background: #1a3d99;
+    display:inline-block;
+    width:100px;
+    height: 40px;
+    padding:3px 6px;
+    border-radius: 5px;    
+    align-items: center;
+    justify-content: center;
+    display: flex;      
+}
+
+#infom span {
+    display:inline-block;
+    margin-left: 20px;
+    
+}
+
+#infom section:nth-child(2) { 
+    display: flex;
+    border:0px solid red;
+    align-items: center;
+    margin-top:20px;
+}
+
+#infom section:nth-child(2) span {
+    border:0px solid red;
+    margin-top:20px;
+}
+
+#infom section:nth-child(3) {
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+}
+
+#tel {
+    border:0px solid red;
+    max-width:500px;
+    background: #f4f5f9;
+    margin-top:20px;
+    padding:20px;
+}
+
+#tel #route {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+#tel #route section{
+    text-align: center;
+}
+
+#tel #route section a {
+    filter:brightness(80%) saturate(0.8);
+}
+
+#tel #route section a:hover{
+    filter:brightness(100%) saturate(1);      
+}
+
+#tel #route section p { 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#tel #infolist {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+}
+
+#tel #infolist ul li {
+    margin:20px 20px;
+}
+
+#tel #infolist ul li a {
+    letter-spacing: -1px;
+}
+
+#tel #infolist ul li a:hover {
+    color:#2214e6;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* 우측 섹션 처리 */
+#right {
+    border:0px solid red;
+    margin-left: 50px;
+    margin-top:20px;
+    max-width: 600px;
+}
+
+#right #search {
+    border:0px solid blue;
+    display: flex;
+    background: #f4f5f9;
+    padding:25px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right #search i {
+    color:#3e5eb5;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#right #search p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#right #search input {
+    width:400px;
+    font-size: 1.2rem;
+    margin-left: 0px;
+    border:none;
+    background-color:#f4f5f9;    
+}
+
+#right #search img {
+    width:80%;
+}
+
+#right #search input::placeholder {
+    color:#717276;
+    letter-spacing: -1px;    
+}
+
+#right #pop { 
+    display: flex;
+    margin-top: 30px;
+}
+
+#right #pop div:first-child {
+    border:0px solid red;
+    display:flex;
+    font-size: 0.8rem;
+    align-items: center;
+    padding:0px 10px;    
+    justify-content: space-evenly;    
+}
+
+#right #pop div:first-child p {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#right #pop div:last-child {
+    border:0px solid red;
+    align-items: center;
+}
+
+#right #pop div:last-child span {
+    padding:3px 6px;
+    margin:2px;
+    border:1px dashed #dadada;
+}
+
+#right #pop div:last-child span:hover {
+    border:1px solid #135ba8;
+    color:#135ba8;
+}
+
+#jaju { 
+    margin-top:5px;
+}
+
+#jaju div{ 
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+}
+
+#jaju div:first-child {
+    border:0px solid red;
+    display: inline-block;
+}
+
+#jaju>div { 
+    padding-top:20px;    
+}
+
+#jaju>div p {
+    font-weight: bold;
+    font-size: 1.2rem;    
+}
+
+#jaju>div i {
+    color:#3e5eb5;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#jaju section {
+    background: #f4f5f9;
+    width:105px;
+    height:130px;
+    border:1px solid #ededef;
+    padding:30px;
+    margin-top:15px;
+    border-radius: 5px;
+    position:relative;
+}
+
+#jaju section:hover {
+    background-color: #ddd;
+}
+
+#jaju section a {
+    display: block;
+    width:110px;
+    height:130px;
+    border:0px solid red;
+    position:absolute;
+    left:0;
+    top:0;
+    text-align: center;    
+}
+
+#jaju section a:hover img {
+    filter:invert(80%) saturate(80%);
+    
+}
+
+#jaju section img {
+    margin-top: 25px;
+}
+
+#jaju section p { 
+    letter-spacing: -1px;
+    font-size: 1rem;
+}
+
+#footer {    
+    border:1px solid #ededef;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    margin-top:25px;   
+}
+
+#footer a {
+    display:flex;
+    align-items: center;        
+}
+
+#footer a:hover img {
+    filter:invert(80%) saturate(80%);
+}
+
+#footer a span {
+    margin-left: 10px;
+    letter-spacing: -1px;
+}
+
+
+@media (max-width:450px) {
+
+    #layout {        
+        flex-direction: column;
+        margin-left:5px;
+    }
+
+    #infom h3 {
+        background: #1a3d99;
+        display:inline-block;
+        width:90px;
+        height: 30px;
+        padding:3px 6px;
+        border-radius: 5px;    
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 1rem;   
+    }
+    
+    #infom span {
+        display:inline-block;
+        margin-left: 20px;
+        font-size: 0.9rem;
+        
+    }
+    
+    #infom section:nth-child(2) { 
+        display: flex;
+        border:0px solid red;
+        align-items: center;
+        margin-top:20px;
+    }
+    
+    #infom section:nth-child(2) span {
+        border:0px solid red;
+        margin-top:20px;
+        font-size: 0.9rem;
+    }
+    
+    #infom section:nth-child(3) {
+        display: flex;
+        align-items: center;
+        margin-top:20px;
+    }
+    
+
+    #tel #infolist ul li a {
+        letter-spacing: -1px;
+        font-size: 0.7rem;
+    }
+
+    #right {
+        border:0px solid red;
+        margin-left: 0px;
+        margin-top:20px;
+        max-width: 600px;
+    }
+
+    #right #search {
+        border:0px solid blue;
+        display: flex;
+        background: #f4f5f9;
+        padding:25px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #right #search i {
+        color:#3e5eb5;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    #right #search input {
+        width:200px;
+        font-size: 0.9rem;
+        margin-left: 0px;
+        border:none;
+        background-color:#f4f5f9;    
+    }
+    
+    #right #search img {
+        width:80%;
+    }
+    
+    #right #search input::placeholder {
+        color:#717276;
+        letter-spacing: -1px;
+        text-align: center; 
+    }
+    
+    #right #search p {
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    #right #pop {
+        border:0px solid red;
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        padding:15px 10px;    
+        justify-content: space-evenly;
+        flex-direction: column;        
+    }
+
+    #right #pop div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border:0px solid red;
+        width:100%;        
+    }
+
+    #right #pop div:first-child p {
+        margin-left: 5px;
+    }
+
+    #right #pop div:last-child {
+        border:0px solid red;
+        margin-top:15px;
+    }
+    
+    #right #pop p {
+        margin-right: 10px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-size: 0.9rem;
+    }
+    
+    #right #pop span {
+        padding:3px 6px;
+        margin:2px;
+        border:1px dashed #dadada;  
+        font-size: 0.8rem;
+        letter-spacing: -1px;   
+    }
+
+    #footer a {
+        display:flex;
+        align-items: center;  
+        flex-direction: column;    
+        margin: auto;          
+    }
+
+    #footer a span {
+        margin-left: 10px;
+        letter-spacing: -1px;
+        font-size: 0.9rem;
+        margin: auto;      
+    }
+    
+}
